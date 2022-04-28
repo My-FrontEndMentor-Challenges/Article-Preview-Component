@@ -10,8 +10,8 @@ const app = () => {
     cardFooter.classList.toggle("footer-active");
     ShareIconContainer.classList.toggle("active-container");
     shareIcon.classList.toggle("active-icon");
-    shareContent.classList.toggle("hidden");
-    userContent.classList.toggle("hidden");
+    shareContent.classList.toggle("active-share");
+    userContent.classList.toggle("user-hidden");
   });
 };
 
