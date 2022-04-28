@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: hsl(210, 46%, 95%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 700px;
+  width: 480px;
+  border-radius: 10px;
+  background-color: #fff;
+  display: grid;
+  grid-template-rows: 2fr 2fr 0.6fr;
+  justify-items: center;
+}
+.img-container {
+  background-image: url("/assets/drawers.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+/** Card Main Start **/
+.card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+.card-text h1 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  color: hsl(217, 19%, 35%);
+}
+.card-text p {
+  line-height: 1.7;
+  color: hsl(214, 17%, 51%);
+}
+/* Card Main End */
+
+/*** Card Footer ***/
+.card-footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 10px 10px;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+.share-icon-container {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(210, 46%, 95%);
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+.share-icon-container:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
+.share-icon {
+  object-fit: contain;
+  fill: #6e8098;
+}
+.footer-active {
+  background-color: hsl(217, 19%, 35%);
+}
+/** User Content Start **/
+.user-content {
+  display: flex;
+  align-items: center;
+}
+.user-name {
+  color: hsl(217, 19%, 35%);
+  font-weight: bold;
+  line-height: 1.5;
+}
+.user-date {
+  color: hsl(212, 23%, 69%);
+  font-size: 0.9rem;
+}
+.avatar {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+/* User Content End */
+
+/** Social Content Start **/
+.share-content {
+  display: flex;
+  align-items: center;
+}
+.share-text {
+  letter-spacing: 7px;
+  color: hsl(212, 23%, 69%);
+}
+.social-links {
+  display: flex;
+  align-items: center;
+}
+.social-link {
+  margin-left: 1.5rem;
+  height: 25px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.social-link:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
+.active-container {
+  background-color: hsl(214, 17%, 51%);
+}
+.active-icon {
+  fill: white;
+}
+.hidden {
+  display: none;
+}
+/* Social Content End*/
