@@ -19,7 +19,7 @@ body {
 
 .card {
   height: 700px;
-  width: 480px;
+  width: 370px;
   border-radius: 10px;
   background-color: #fff;
   display: grid;
@@ -68,6 +68,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 80%;
+  position: relative;
 }
 .share-icon-container {
   height: 40px;
@@ -122,6 +123,7 @@ body {
   display: flex;
   align-items: center;
   opacity: 0;
+  right: 28%;
 }
 .active-share {
   z-index: 2;
